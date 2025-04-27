@@ -1,0 +1,17 @@
+QUESTION 1
+
+SELECT ("e.first Name"," ","e.last Name","e.email"."e.office Codes")
+FROM table_employees AS e
+INNER JOIN offices.o ON e.officeCode =o.office;
+
+QUESTION 2
+SELECT ("p.productName","p.productVendor","p.productLine")
+FROM table_product AS p
+LEFT JOIN productlines.pl ON p.productLine = pl.productLine;
+
+QUESTION 3
+SELECT ("o.orderDate","o.shippedDate","o.status","o.status","o.customerNumber")
+FROM table_orders AS o
+RIGHT JOIN orders.o ON c.customerNumber= o.customerNumber
+ORDER BY o.orderDate
+LIMIT=10
